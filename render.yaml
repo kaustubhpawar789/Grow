@@ -1,9 +1,16 @@
 services:
   - type: web
-    name: mutual-fund-faq-api
-    env: docker
+    name: mutual-fund-rag-api
+    env: python
     region: oregon
-    plan: free
+    buildCommand: "./build.sh"
+    startCommand: "uvicorn api.main:app --host 0.0.0.0 --port $PORT"
     envVars:
-      - key: GROQ_API_KEY
+      - key: PYTHON_VERSION
+        value: 3.9.0
+      - key: LLM_API_KEY
         sync: false
+    disk:
+      name: chromadb-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1

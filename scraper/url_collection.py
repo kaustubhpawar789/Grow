@@ -1,7 +1,7 @@
 import os
 import re
 
-def extract_urls(input_file="docs/problemstatement.md", output_file="data/raw/urls.txt", max_urls=100):
+def extract_urls(input_file="docs/problemstatement.md", output_file="data/raw/urls.txt", max_urls=None):
     """Extracts URLs from the markdown file under the Groww URLs section."""
     print(f"Reading {input_file}...")
     try:
@@ -22,8 +22,9 @@ def extract_urls(input_file="docs/problemstatement.md", output_file="data/raw/ur
     # Extract URLs
     urls = re.findall(r'https?://[^\s<>"]+|www\.[^\s<>"]+', section_text)
     
-    # Take only the first max_urls
-    urls = urls[:max_urls]
+    # Take only the first max_urls if specified
+    if max_urls:
+        urls = urls[:max_urls]
     
     print(f"Extracted {len(urls)} URLs. Saving to {output_file}...")
     

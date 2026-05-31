@@ -59,7 +59,7 @@ def main():
     for i in range(0, total_chunks, batch_size):
         end = min(i + batch_size, total_chunks)
         print(f"Ingesting batch {i} to {end}...")
-        collection.add(
+        collection.upsert(
             documents=documents[i:end],
             metadatas=metadatas[i:end],
             ids=ids[i:end]

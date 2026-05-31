@@ -10,3 +10,131 @@
 2026-05-31 15:54:20,718 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-05-31 15:56:27,327 [INFO] response: https://www.bing.com/search?q=What+is+the+exit+load+for+HDFC+Mid+Cap%3F 200
 2026-05-31 15:56:28,030 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:30:16,553 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-31 18:30:16,553 [INFO] Added job "Data Refresh (every 60 min)" to job store "default"
+2026-05-31 18:30:16,553 [INFO] Scheduler started
+2026-05-31 18:30:16,553 [INFO] Background scheduler started. Refresh interval: every 60 minute(s).
+2026-05-31 18:30:47,447 [INFO] response: https://www.bing.com/search?q=What+is+the+exit+load+for+HDFC+Mid+Cap+Opportunities+Fund%3F 200
+2026-05-31 18:30:48,115 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:31:00,522 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:31:01,271 [INFO] response: https://www.bing.com/search?q=What+is+the+current+AUM+of+SBI+Bluechip+Fund%3F 200
+2026-05-31 18:31:01,758 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:31:16,651 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:31:17,449 [INFO] response: https://www.bing.com/search?q=Who+is+the+fund+manager+for+the+Axis+Long+Term+Equity+Fund%3F 200
+2026-05-31 18:31:17,804 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:31:36,572 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:31:37,576 [INFO] response: https://www.bing.com/search?q=What+is+the+difference+between+direct+and+regular+mutual+fund+plans+in+mutual+funds+like+SBI+Bluechip+Fund+and+Axis+Long+Term+Equity+Fund%3F 200
+2026-05-31 18:31:37,953 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:43:29,666 [INFO] response: https://www.bing.com/search?q=what+is+the+nav+for+today+of+sbi+small+cap 200
+2026-05-31 18:43:30,381 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:46:42,477 [INFO] response: https://www.bing.com/search?q=%22What+is+the+expense+ratio+for+the+Parag+Parikh+Flexi+Cap+Fund%3F%22+%22What+is+the+total+AUM+%28Assets+Under+Management%29+for+the+Quant+Small+Cap+Fund%3F%22+%22Can+you+tell+me+the+expense+ratio+of+the+Tata+Digital+India+Fund%3F%22+%22How+much+is+the+AUM+of+the+Mirae+Asset+Large+Cap+Fund%3F%22 200
+2026-05-31 18:46:43,071 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:46:58,746 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:46:59,310 [INFO] response: https://www.bing.com/search?q=What+is+the+total+AUM+%28Assets+Under+Management%29+for+the+Quant+Small+Cap+Fund%3F 200
+2026-05-31 18:46:59,736 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:47:11,196 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:47:11,761 [INFO] response: https://www.bing.com/search?q=What+is+the+expense+ratio+of+the+Tata+Digital+India+Fund%3F 200
+2026-05-31 18:47:12,320 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:47:28,451 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:47:29,043 [INFO] response: https://www.bing.com/search?q=What+is+the+total+AUM+%28Assets+Under+Management%29+for+the+Mirae+Asset+Large+Cap+Fund%3F 200
+2026-05-31 18:47:29,510 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:48:44,866 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:48:46,156 [INFO] response: https://www.bing.com/search?q=How+much+is+the+minimum+SIP+amount+required+to+invest+in+the+ICICI+Prudential+Bluechip+Fund%3F 200
+2026-05-31 18:48:46,598 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:49:01,324 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 18:49:02,128 [INFO] response: https://www.bing.com/search?q=What+is+the+minimum+lumpsum+investment+required+for+the+Kotak+Emerging+Equity+Fund%3F 200
+2026-05-31 18:49:02,466 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:09:48,040 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-31 19:09:48,040 [INFO] Added job "Data Refresh (every 60 min)" to job store "default"
+2026-05-31 19:09:48,040 [INFO] Scheduler started
+2026-05-31 19:09:48,041 [INFO] Background scheduler started. Refresh interval: every 60 minute(s). Initial run starting now.
+2026-05-31 19:09:48,041 [INFO] Running job "Data Refresh (every 60 min) (trigger: interval[1:00:00], next run at: 2026-05-31 19:09:48 IST)" (scheduled at 2026-05-31 19:09:48.040475+05:30)
+2026-05-31 19:09:48,042 [INFO] ============================================================
+2026-05-31 19:09:48,042 [INFO] SCHEDULED REFRESH STARTED at 2026-05-31T19:09:48.042087
+2026-05-31 19:09:48,042 [INFO] ============================================================
+2026-05-31 19:09:48,042 [INFO] Starting re-scraping of URL corpus...
+2026-05-31 19:10:38,271 [INFO] response: https://www.bing.com/search?q=How+much+is+the+AUM+of+the+Mirae+Asset+Large+Cap+Fund%3F%22+or+%22What+is+the+total+AUM+for+the+Quant+Small+Cap+Fund%3F%22 200
+2026-05-31 19:10:40,010 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:10:52,902 [INFO] Re-scraping completed successfully.
+2026-05-31 19:10:52,902 [INFO] Initializing ChromaDB at /Users/kaustubhpawar/RAG MILESTONE/data/chroma_db...
+2026-05-31 19:10:52,994 [INFO] Found 565 processed fund folders.
+2026-05-31 19:10:53,066 [INFO] Incremental ingest complete: {'added': 0, 'updated': 0, 'skipped': 3390, 'errors': 0}
+2026-05-31 19:10:53,066 [INFO] REFRESH COMPLETE in 65.0s | Added: 0 | Updated: 0 | Skipped: 3390 | Errors: 0
+2026-05-31 19:10:53,066 [INFO] ============================================================
+2026-05-31 19:10:53,066 [INFO] Job "Data Refresh (every 60 min) (trigger: interval[1:00:00], next run at: 2026-05-31 20:09:48 IST)" executed successfully
+2026-05-31 19:11:02,862 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:11:03,936 [INFO] response: https://www.bing.com/search?q=What+is+the+total+AUM+for+the+Mirae+Asset+Large+Cap+Fund+Regular+Growth+and+what+is+the+total+AUM+for+the+Mirae+Asset+Large+Cap+Fund+Direct+Growth%3F 200
+2026-05-31 19:11:04,575 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:11:19,996 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:11:20,827 [INFO] response: https://www.bing.com/search?q=What+is+the+total+AUM+for+the+Mirae+Asset+Large+Cap+Fund%3F 200
+2026-05-31 19:11:21,232 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:11:40,620 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:11:41,821 [INFO] response: https://www.bing.com/search?q=What+is+the+total+AUM+for+the+Quant+Small+Cap+Fund 200
+2026-05-31 19:11:42,098 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:12:06,920 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:12:07,755 [INFO] response: https://www.bing.com/search?q=What+is+the+RM+name+for+the+AUM+of+the+Mirae+Asset+Large+Cap+Fund+Regular+Growth 200
+2026-05-31 19:12:08,111 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:13:49,033 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:13:50,494 [INFO] response: https://www.bing.com/search?q=What+are+all+the+mutual+funds+that+you+know 200
+2026-05-31 19:13:51,306 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:14:07,511 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:14:08,524 [INFO] response: https://www.bing.com/search?q=Provide+me+the+list+of+all+known+mutual+funds. 200
+2026-05-31 19:14:09,510 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:14:21,977 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:14:23,138 [INFO] response: https://www.bing.com/search?q=What+is+the+list+of+all+mutual+funds%2C+including+DSP+Arbitrage+Fund+Regular+IDCW%2C+Edelweiss+Short+Term+Fund+Regular+IDCW%2C+Edelweiss+Short+Term+Fund+Regular+Growth%2C+Canara+Robeco+Short+Term+Fund+Direct+Growth. 200
+2026-05-31 19:14:23,674 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:15:17,905 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:15:18,900 [INFO] response: https://www.bing.com/search?q=What+is+the+name+of+the+current+fund+manager+for+the+SBI+Bluechip+Fund%3F 200
+2026-05-31 19:15:19,348 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:15:35,841 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:15:37,008 [INFO] response: https://www.bing.com/search?q=Who+is+the+fund+manager+for+the+Mirae+Asset+Large+Cap+Fund%3F 200
+2026-05-31 19:15:37,440 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:16:46,089 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-31 19:16:46,089 [INFO] Added job "Data Refresh (every 60 min)" to job store "default"
+2026-05-31 19:16:46,089 [INFO] Scheduler started
+2026-05-31 19:16:46,089 [INFO] Background scheduler started. Refresh interval: every 60 minute(s). Initial run starting now.
+2026-05-31 19:16:46,089 [INFO] Running job "Data Refresh (every 60 min) (trigger: interval[1:00:00], next run at: 2026-05-31 19:16:46 IST)" (scheduled at 2026-05-31 19:16:46.089121+05:30)
+2026-05-31 19:16:46,090 [INFO] ============================================================
+2026-05-31 19:16:46,090 [INFO] SCHEDULED REFRESH STARTED at 2026-05-31T19:16:46.090528
+2026-05-31 19:16:46,090 [INFO] ============================================================
+2026-05-31 19:16:46,090 [INFO] Starting re-scraping of URL corpus...
+2026-05-31 19:18:06,971 [INFO] Re-scraping completed successfully.
+2026-05-31 19:18:06,971 [INFO] Initializing ChromaDB at /Users/kaustubhpawar/RAG MILESTONE/data/chroma_db...
+2026-05-31 19:18:07,020 [INFO] Found 565 processed fund folders.
+2026-05-31 19:18:07,082 [INFO] Incremental ingest complete: {'added': 0, 'updated': 0, 'skipped': 3390, 'errors': 0}
+2026-05-31 19:18:07,083 [INFO] REFRESH COMPLETE in 81.0s | Added: 0 | Updated: 0 | Skipped: 3390 | Errors: 0
+2026-05-31 19:18:07,083 [INFO] ============================================================
+2026-05-31 19:18:07,083 [INFO] Job "Data Refresh (every 60 min) (trigger: interval[1:00:00], next run at: 2026-05-31 20:16:46 IST)" executed successfully
+2026-05-31 19:18:35,966 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-31 19:18:35,966 [INFO] Added job "Data Refresh (every 60 min)" to job store "default"
+2026-05-31 19:18:35,966 [INFO] Scheduler started
+2026-05-31 19:18:35,966 [INFO] Background scheduler started. Refresh interval: every 60 minute(s). Initial run starting now.
+2026-05-31 19:18:35,966 [INFO] Running job "Data Refresh (every 60 min) (trigger: interval[1:00:00], next run at: 2026-05-31 19:18:35 IST)" (scheduled at 2026-05-31 19:18:35.965991+05:30)
+2026-05-31 19:18:35,966 [INFO] ============================================================
+2026-05-31 19:18:35,967 [INFO] SCHEDULED REFRESH STARTED at 2026-05-31T19:18:35.966976
+2026-05-31 19:18:35,967 [INFO] ============================================================
+2026-05-31 19:18:35,967 [INFO] Starting re-scraping of URL corpus...
+2026-05-31 19:19:12,133 [INFO] response: https://www.bing.com/search?q=%22What+is+the+name+of+the+fund+manager+for+the+HDFC+Defence+Fund%3F%22 200
+2026-05-31 19:19:13,838 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:19:25,396 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:19:27,417 [INFO] response: https://www.bing.com/search?q=Who+manages+the+Parag+Parikh+Flexi+Cap+Fund%3F 200
+2026-05-31 19:19:27,985 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:19:45,568 [INFO] Re-scraping completed successfully.
+2026-05-31 19:19:45,568 [INFO] Initializing ChromaDB at /Users/kaustubhpawar/RAG MILESTONE/data/chroma_db...
+2026-05-31 19:19:45,582 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:19:45,691 [INFO] Found 565 processed fund folders.
+2026-05-31 19:19:45,811 [INFO] Incremental ingest complete: {'added': 0, 'updated': 0, 'skipped': 3390, 'errors': 0}
+2026-05-31 19:19:45,815 [INFO] REFRESH COMPLETE in 69.8s | Added: 0 | Updated: 0 | Skipped: 3390 | Errors: 0
+2026-05-31 19:19:45,815 [INFO] ============================================================
+2026-05-31 19:19:45,816 [INFO] Job "Data Refresh (every 60 min) (trigger: interval[1:00:00], next run at: 2026-05-31 20:18:35 IST)" executed successfully
+2026-05-31 19:19:46,844 [INFO] response: https://www.bing.com/search?q=What+is+the+name+of+the+current+fund+manager+for+the+SBI+Bluechip+Fund%3F 200
+2026-05-31 19:19:47,111 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:20:12,398 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:20:13,350 [INFO] response: https://www.bing.com/search?q=Who+is+the+fund+manager+for+the+Mirae+Asset+Large+Cap+Fund%3F 200
+2026-05-31 19:20:13,727 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:20:39,907 [INFO] response: https://www.bing.com/search?q=What+is+the+NAV+for+SBI+Bluechip%3F 200
+2026-05-31 19:20:40,685 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:20:48,425 [INFO] response: https://www.bing.com/search?q=What+is+the+expense+ratio+of+HDFC+Mid+Cap%3F 200
+2026-05-31 19:20:48,932 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 19:20:56,053 [INFO] response: https://www.bing.com/search?q=What+is+the+exit+load+for+Axis+Liquid+Fund%3F 200
+2026-05-31 19:20:56,680 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

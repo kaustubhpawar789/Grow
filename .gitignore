@@ -55,3 +55,5 @@ Thumbs.db
 data/raw/
 data/processed/
 data/embeddings/
+data/chroma_db/
+data/logs/

@@ -20,21 +20,25 @@ def extract_metadata_from_text(clean_text, slug):
     }
 
     # Attempt to extract actual values using Regex
-    er_match = re.search(r'Expense Ratio.*?is\s+([0-9\.]+%?)', clean_text, re.IGNORECASE)
+    er_match = re.search(r'Expense Ratio.*?([0-9\.]+%?)', clean_text, re.IGNORECASE)
     if er_match:
         sections['expense_ratio'] = f"Expense Ratio: {er_match.group(1)}"
 
-    aum_match = re.search(r'AUM.*?is\s+(₹[0-9,\.]+Cr)', clean_text, re.IGNORECASE)
+    aum_match = re.search(r'AUM.*?(₹[0-9,\.]+Cr)', clean_text, re.IGNORECASE)
     if aum_match:
         sections['aum'] = f"AUM: {aum_match.group(1)}"
 
-    exit_load_match = re.search(r'(Exit Load.*?\.)', clean_text, re.IGNORECASE)
+    exit_load_match = re.search(r'(Exit Load.*?(?:\.|\%))', clean_text, re.IGNORECASE)
     if exit_load_match:
         sections['exit_load'] = exit_load_match.group(1)
 
     min_inv_match = re.search(r'(Minimum.*?(?:SIP|Lumpsum).*?₹[0-9,]+)', clean_text, re.IGNORECASE)
     if min_inv_match:
         sections['minimum_investment'] = min_inv_match.group(1)
+
+    manager_match = re.search(r'([A-Za-z\s]+) is the Current Fund Manager', clean_text, re.IGNORECASE)
+    if manager_match:
+        sections['fund_management'] = f"Fund Manager: {manager_match.group(1).strip()}"
 
     return sections
 

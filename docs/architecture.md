@@ -71,9 +71,9 @@ flowchart TD
 This pipeline is responsible for maintaining the knowledge base. It runs on a scheduled basis (e.g., weekly) to keep facts up to date.
 
 - **Data Sources:** 
-  - Parses the 100-150 curated URLs (AMC websites, Factsheets, SIDs, KIMs, AMFI/SEBI guidelines).
+  - Parses the full corpus of 1,500+ curated URLs (AMC websites, Factsheets, SIDs, KIMs, AMFI/SEBI guidelines).
 - **Web Scraping & Document Parsing:** 
-  - Uses tools like `Playwright` for dynamic pages and `PyPDF2` / `pdfplumber` for Factsheets and Scheme Information Documents (SIDs).
+  - Uses highly concurrent asynchronous tools (like `Playwright` with `asyncio.Semaphore`) for dynamic pages and `PyPDF2` / `pdfplumber` for Factsheets and Scheme Information Documents (SIDs).
 - **Data Cleaning:** 
   - Removes headers, footers, and irrelevant HTML markup to reduce noise.
 - **Text Chunking:** 

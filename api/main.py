@@ -33,8 +33,8 @@ class ChatResponse(BaseModel):
 
 @app.on_event("startup")
 async def startup_event():
-    """Phase 7.1: Start the background scheduler on app boot (every 15 minutes)."""
-    start_scheduler(interval_minutes=15)
+    """Phase 7.1: Start the background scheduler on app boot (every 1 hour)."""
+    start_scheduler(interval_minutes=60)
 
 @app.on_event("shutdown")
 async def shutdown_event():

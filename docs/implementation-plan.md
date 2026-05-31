@@ -11,9 +11,9 @@ This document outlines the step-by-step implementation plan for the Mutual Fund 
 
 ## Phase 2: Data Ingestion Pipeline (Offline)
 **Objective:** Collect, clean, and process the raw data from official mutual fund sources.
-* **2.1. URL Collection:** Finalize the 100-150 public URLs (Factsheets, KIMs, SIDs, AMFI FAQs) as specified in the Corpus Definition.
+* **2.1. URL Collection:** Extract the full corpus of 1,500+ public URLs (Factsheets, KIMs, SIDs, AMFI FAQs) as specified in the Corpus Definition, removing development limits.
 * **2.2. Web Scraping & PDF Parsing:** 
-  * Develop scraping scripts (using `Playwright` or `BeautifulSoup`) for HTML pages.
+  * Develop asynchronous, highly concurrent scraping scripts (using `Playwright` with `asyncio.Semaphore` for parallel browser tabs) to rapidly process all 1,500+ HTML pages.
   * Develop PDF parsing scripts (using `PyPDF2` or `pdfplumber`) for Factsheets and SIDs.
 * **2.3. Data Cleaning:** Strip unnecessary headers, footers, HTML tags, and boilerplate text.
 * **2.4. Section-Based (Metadata-Aware) Chunking:** Instead of fixed-size text splitting, chunk data logically by distinct sections (Overview, Expense Ratio, Exit Load, Minimum Investment, Fund Management, AUM). Prepend each chunk with its Scheme Name and Section Name to ensure context is perfectly preserved for retrieval.

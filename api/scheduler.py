@@ -203,16 +203,17 @@ scheduler = BackgroundScheduler()
 
 
 def start_scheduler(interval_minutes: int = 15):
-    """Start the background scheduler to run every N minutes."""
+    """Start the background scheduler to run every N minutes and immediately on startup."""
     scheduler.add_job(
         run_full_refresh,
         trigger=IntervalTrigger(minutes=interval_minutes),
         id="data_refresh_job",
         name=f"Data Refresh (every {interval_minutes} min)",
-        replace_existing=True
+        replace_existing=True,
+        next_run_time=datetime.now()
     )
     scheduler.start()
-    logger.info(f"Background scheduler started. Refresh interval: every {interval_minutes} minute(s).")
+    logger.info(f"Background scheduler started. Refresh interval: every {interval_minutes} minute(s). Initial run starting now.")
 
 
 def stop_scheduler():

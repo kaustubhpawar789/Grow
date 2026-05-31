@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>EquiAssist AI - Mutual Fund FAQ</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#c0c1ff",
+                        "inverse-surface": "#e2e2e8",
+                        "tertiary-container": "#bcbec0",
+                        "on-error": "#690005",
+                        "surface-bright": "#37393e",
+                        "surface-variant": "#333539",
+                        "on-primary-fixed": "#00201c",
+                        "primary-container": "#2dd4bf",
+                        "surface-container-high": "#282a2e",
+                        "on-secondary": "#1000a9",
+                        "primary": "#57f1db",
+                        "surface-dim": "#111318",
+                        "surface-container-lowest": "#0c0e12",
+                        "on-primary": "#003731",
+                        "inverse-on-surface": "#2f3035",
+                        "surface-container-highest": "#333539",
+                        "error-container": "#93000a",
+                        "primary-fixed-dim": "#3cddc7",
+                        "on-surface": "#e2e2e8",
+                        "tertiary": "#d8dadc",
+                        "surface-tint": "#3cddc7",
+                        "on-tertiary-fixed": "#191c1e",
+                        "outline": "#859490",
+                        "secondary-fixed": "#e1e0ff",
+                        "surface-container-low": "#1a1c20",
+                        "secondary": "#c0c1ff",
+                        "on-tertiary-container": "#4a4d4f",
+                        "secondary-container": "#3131c0",
+                        "on-tertiary": "#2d3133",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "on-background": "#e2e2e8",
+                        "surface-container": "#1e2024",
+                        "on-primary-fixed-variant": "#005047",
+                        "background": "#111318",
+                        "inverse-primary": "#006b5f",
+                        "on-surface-variant": "#bacac5",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed": "#07006c",
+                        "outline-variant": "#3c4a46",
+                        "tertiary-fixed": "#e0e3e5",
+                        "tertiary-fixed-dim": "#c4c7c9",
+                        "on-secondary-container": "#b0b2ff",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-container": "#00574d",
+                        "primary-fixed": "#62fae3",
+                        "surface": "#111318",
+                        "on-secondary-fixed-variant": "#2f2ebe"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "16px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "sm": "8px",
+                        "xs": "4px",
+                        "xl": "32px",
+                        "xxl": "48px",
+                        "lg": "24px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "title-lg": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "title-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.25px", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "title-lg": ["22px", {"lineHeight": "28px", "fontWeight": "500"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "500"}],
+                        "title-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0.15px", "fontWeight": "500"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": "400"}],
+                        "display-lg": ["57px", {"lineHeight": "64px", "letterSpacing": "-0.25px", "fontWeight": "700"}],
+                        "label-sm": ["11px", {"lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel {
+            background: rgba(22, 27, 34, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(133, 148, 144, 0.1);
+        }
+        
+        @keyframes slideUpFade {
+            0% { opacity: 0; transform: translateY(24px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-enter {
+            animation: slideUpFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+        .delay-500 { animation-delay: 500ms; }
+
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 10px 0 rgba(87, 241, 219, 0.15); border-color: rgba(87, 241, 219, 0.3); }
+            50% { box-shadow: 0 0 20px 2px rgba(87, 241, 219, 0.4); border-color: rgba(87, 241, 219, 0.6); }
+        }
+
+        .focus-glow-pulse:focus-within {
+            animation: pulseGlow 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes warningPulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(255, 180, 171, 0); }
+            50% { box-shadow: 0 0 15px 2px rgba(255, 180, 171, 0.25); }
+        }
+
+        .animate-warning-pulse {
+            animation: warningPulse 2.5s ease-in-out infinite;
+        }
+        
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(133, 148, 144, 0.2);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md overflow-x-hidden">
+    <header class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-outline-variant/20">
+        <div class="flex justify-between items-center px-gutter py-base max-w-[1280px] mx-auto w-full">
+            <div class="flex items-center gap-xs cursor-pointer active:opacity-80">
+                <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">analytics</span>
+                <span class="text-title-lg font-headline-lg text-primary tracking-tight">EquiAssist AI</span>
+            </div>
+            <nav class="hidden md:flex gap-lg">
+                <a class="text-primary font-medium border-b-2 border-primary hover:bg-primary/10 transition-colors duration-200 px-sm py-xs rounded-t-sm" href="#">
+                    Facts-only Disclaimer: Expert financial data provided for information only.
+                </a>
+            </nav>
+            <div class="flex items-center gap-base">
+                <button class="text-on-surface-variant hover:bg-primary/10 transition-colors duration-200 p-sm rounded-full cursor-pointer active:opacity-80">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">account_balance_wallet</span>
+                </button>
+                <button class="text-on-surface-variant hover:bg-primary/10 transition-colors duration-200 p-sm rounded-full cursor-pointer active:opacity-80">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">help</span>
+                </button>
+                <button class="text-on-surface-variant hover:bg-primary/10 transition-colors duration-200 p-sm rounded-full cursor-pointer active:opacity-80">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">account_circle</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="w-full bg-[#f59e0b] text-[#1a1c20] py-sm px-gutter text-center font-label-lg mt-[64px] z-40 relative shadow-md">
+        <span class="font-bold flex items-center justify-center gap-sm">
+            <span class="material-symbols-outlined text-[18px]">warning</span>
+            ⚠️ Facts-only. No investment advice.
+        </span>
+    </div>
+
+    <main class="flex-1 overflow-y-auto w-full max-w-[1280px] mx-auto px-gutter pb-[180px] pt-lg relative" style="height: calc(100vh - 120px);" id="chat-container">
+        <div class="flex flex-col items-center justify-center min-h-[400px] text-center transition-all duration-300" id="welcome-state">
+            <div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-lg shadow-lg border border-primary/20 opacity-0 animate-enter">
+                <span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+            </div>
+            <h1 class="font-display-lg text-display-lg text-on-surface mb-base bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary opacity-0 animate-enter delay-100">EquiAssist AI</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-xl opacity-0 animate-enter delay-200">
+                I am your RAG-powered financial assistant, designed to deliver precise, factual data directly from official AMFI and AMC documents. I do not provide personalized investment recommendations.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-md w-full max-w-4xl mb-[60px]">
+                <button class="prompt-btn bg-surface-container hover:bg-surface-container-high border border-outline/10 rounded-xl p-md text-left transition-all duration-300 hover:-translate-y-2 hover:scale-[1.05] hover:shadow-[0_0_20px_rgba(87,241,219,0.15)] hover:border-primary/40 group opacity-0 animate-enter delay-300">
+                    <span class="material-symbols-outlined text-secondary mb-sm group-hover:scale-110 group-hover:text-primary transition-all">pie_chart</span>
+                    <p class="font-title-md text-title-md text-on-surface">What is the expense ratio of HDFC Mid Cap?</p>
+                </button>
+                <button class="prompt-btn bg-surface-container hover:bg-surface-container-high border border-outline/10 rounded-xl p-md text-left transition-all duration-300 hover:-translate-y-2 hover:scale-[1.05] hover:shadow-[0_0_20px_rgba(87,241,219,0.15)] hover:border-primary/40 group opacity-0 animate-enter delay-400">
+                    <span class="material-symbols-outlined text-secondary mb-sm group-hover:scale-110 group-hover:text-primary transition-all">currency_rupee</span>
+                    <p class="font-title-md text-title-md text-on-surface">What is the NAV for SBI Bluechip?</p>
+                </button>
+                <button class="prompt-btn bg-surface-container hover:bg-surface-container-high border border-outline/10 rounded-xl p-md text-left transition-all duration-300 hover:-translate-y-2 hover:scale-[1.05] hover:shadow-[0_0_20px_rgba(87,241,219,0.15)] hover:border-primary/40 group opacity-0 animate-enter delay-500">
+                    <span class="material-symbols-outlined text-secondary mb-sm group-hover:scale-110 group-hover:text-primary transition-all">account_balance</span>
+                    <p class="font-title-md text-title-md text-on-surface">What is the exit load for Axis Liquid Fund?</p>
+                </button>
+            </div>
+        </div>
+
+        <!-- Chat Window -->
+        <div class="flex flex-col gap-lg mt-lg hidden pb-10" id="chat-window">
+            <!-- Messages populated by app.js -->
+        </div>
+    </main>
+
+    <div class="fixed bottom-0 left-0 w-full bg-gradient-to-t from-background via-background to-transparent pt-xl pb-lg px-gutter z-40 pointer-events-none">
+        <div class="max-w-3xl mx-auto relative pointer-events-auto">
+            <div class="relative group">
+                <div class="absolute inset-0 bg-primary/20 rounded-full blur-md opacity-0 group-focus-within:opacity-100 transition-opacity duration-300"></div>
+                <form id="chat-form" class="relative flex items-center bg-surface-container border border-outline-variant/50 rounded-full px-lg py-sm shadow-lg focus-glow-pulse transition-all duration-500">
+                    <button type="button" class="text-on-surface-variant hover:text-primary transition-colors p-xs rounded-full">
+                        <span class="material-symbols-outlined">add_circle</span>
+                    </button>
+                    <input id="user-input" class="flex-1 bg-transparent border-none focus:ring-0 text-on-surface font-body-lg placeholder:text-on-surface-variant/50 px-md py-sm outline-none w-full transition-all" placeholder="Ask about fund facts, NAVs, or policies..." type="text" required autocomplete="off"/>
+                    <button type="submit" class="bg-primary hover:bg-primary-fixed-dim text-on-primary rounded-full p-sm flex items-center justify-center transition-transform hover:scale-105 active:scale-95 shadow-md ml-xs" id="send-btn">
+                        <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">send</span>
+                    </button>
+                </form>
+            </div>
+            <div class="text-center mt-sm">
+                <p class="font-label-sm text-label-sm text-on-surface-variant/60">EquiAssist AI can make mistakes based on document parsing. Always verify with official AMC resources.</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

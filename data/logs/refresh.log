@@ -1,0 +1,12 @@
+2026-05-31 15:48:49,066 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-31 15:48:49,066 [INFO] Added job "Weekly Data Refresh" to job store "default"
+2026-05-31 15:48:49,066 [INFO] Scheduler started
+2026-05-31 15:48:49,067 [INFO] Background scheduler started. Refresh interval: every 7 day(s).
+2026-05-31 15:54:11,406 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-31 15:54:11,406 [INFO] Added job "Data Refresh (every 15 min)" to job store "default"
+2026-05-31 15:54:11,406 [INFO] Scheduler started
+2026-05-31 15:54:11,406 [INFO] Background scheduler started. Refresh interval: every 15 minute(s).
+2026-05-31 15:54:20,065 [INFO] response: https://www.bing.com/search?q=hi 200
+2026-05-31 15:54:20,718 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-31 15:56:27,327 [INFO] response: https://www.bing.com/search?q=What+is+the+exit+load+for+HDFC+Mid+Cap%3F 200
+2026-05-31 15:56:28,030 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
